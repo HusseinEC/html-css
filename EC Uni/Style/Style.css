@@ -201,3 +201,61 @@ header {
 .parent4 footer3 {
   grid-area: footer;
 }
+
+.parent5 {
+  margin: 30px;
+  height: 150px;
+  width: 150px;
+  background-color: crimson;
+  border: 1px solid #E1E1E1;
+  position: relative;
+  z-index: -1;
+}
+.parent5 .child-4 {
+  height: 50px;
+  width: 50px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.parent5 .child-5 {
+  height: 25px;
+  width: 25px;
+  background-color: cadetblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container header {
+  background-color: #0AFF00;
+  padding: 20px;
+  position: sticky;
+  top: 0;
+}
+.container main {
+  height: 300px;
+  border: 1px solid black;
+}
+
+.searchbox {
+  background-color: darkblue;
+  display: flex;
+  align-items: center;
+  align-content: flex-start;
+  border-radius: 25px;
+  padding: 8px 20px;
+}
+.searchbox input {
+  background-color: transparent;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 0.5em;
+  margin-left: 5px;
+}
