@@ -125,6 +125,68 @@
         </form>
     </div>
 
+
+    <style>
+        .form-label {display: block; padding: 5px 0;}
+        .form-input {display: block; width: 100%; padding: 10px; border: 1px solid red;}
+        input [type=radio] {display: inline; border: 1px solid red;}
+        input [type=checkbox] {display: inline; border: 1px solid red;}
+        textarea {resize: none; height: 200px;}
+    </style>
+
+    <div class="container mt-2">
+        <form id="registerForm" method="post">
+            <div class="mb-3">
+                <label class="form-label" for="firstName">First Name</label>
+                <input class="form-input" type="text" tabindex="1" id="firstName" name="firstName" placeholder="First Name"></input>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label" for="lastName">Last Name</label>
+                <input class="form-input" type="text" tabindex="2" id="lastName" name="lastName" placeholder="Last Name"></input>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label" for="email">Email</label>
+                <input class="form-input" type="email" tabindex="3" id="email" name="email" placeholder="Email"></input>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label" for="password">Password</label>
+                <input class="form-input" type="password" tabindex="4" id="password" name="password" placeholder="Password"></input>
+            </div>
+
+            <div class="mb-5">
+                <label class="form-label" for="choices">Choose</label>
+                <select class="form-input" name="choices" id="choices">
+                    <option value="Y">Yeah</option>
+                    <option value="N">Nah</option>
+                    <option value="E">Eeh</option>
+                </select>
+            </div>
+
+            <div class="mb-5">
+                <label class="form-label" for="text">Text</label>
+                <textarea class="form-input" name="text" id="text"></textarea>
+            </div>
+
+            <div class="d-flex mb-5">
+                <div class="me-5">
+                    <input type="radio">Yeah</input>
+                </div>
+                <div class="me-5">
+                    <input type="checkbox">Nah</input>
+                </div>
+                <div class="me-5">
+                    <input type="radio">Eeh</input>
+                </div>
+            </div>
+
+            <button class="btn btn-success" type="submit">Done</button>
+        </form>
+
+    </div>
+
     <div class="parent5">
         <div class="child-4">C4</div>
         <div class="child-5">C5</div>
